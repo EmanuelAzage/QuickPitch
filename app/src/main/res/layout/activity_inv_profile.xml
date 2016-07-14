@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true">
+    //android:theme="@android:style/Theme.NoTitleBar">>
+
+
+    <LinearLayout
+        style="?android:attr/buttonStyleSmall"
+        android:orientation="horizontal"
+        android:background="@color/tabbedPaneColor"
+        android:paddingLeft="4.0dip"
+        android:paddingTop="0.2dip"
+        android:paddingRight="4.0dip"
+        android:paddingBottom="0.2dip"
+        android:layout_width="fill_parent" android:layout_height="wrap_content"
+        android:id="@+id/linearLayout">
+
+        <Button
+            android:id="@+id/invProfileButton"
+            android:background="@color/tabbedPaneColor"
+            android:textColor="@color/textColor"
+            android:layout_width="5.0dip" android:layout_height="fill_parent"
+            android:text="Profile"
+            android:layout_weight="1.0" />
+
+        <Button
+            android:id="@+id/likesButton"
+            android:background="@color/tabbedPaneColor"
+            android:textColor="@color/textColor"
+            android:layout_width="5.0dip" android:layout_height="fill_parent"
+            android:text="Likes"
+            android:layout_weight="1.0" />
+
+        <Button
+            android:id="@+id/FeedButton"
+            android:background="@color/tabbedPaneColor"
+            android:textColor="@color/textColor"
+            android:layout_width="5.0dip" android:layout_height="fill_parent"
+            android:text="Feed"
+            android:layout_weight="1.0" />
+
+        <Button
+            android:id="@+id/invConnectionsButton"
+            android:background="@color/tabbedPaneColor"
+            android:textColor="@color/textColor"
+            android:layout_width="20.0dip" android:layout_height="fill_parent"
+            android:text="Connections"
+            android:layout_weight="1.0" />
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Investor"
+        android:typeface="normal"
+        android:textSize="36dp"
+        android:id="@+id/investorNameView"
+        android:textColor="@color/largeText"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/linearLayout"
+        android:layout_toLeftOf="@+id/logoutButton"
+        android:layout_toStartOf="@+id/logoutButton" />
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:textSize="24dp"
+        android:text="email"
+        android:textColor="@color/largeText"
+        android:id="@+id/investorEmailView"
+        android:layout_marginTop="200dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:textSize="24dp"
+        android:text="Company Name"
+        android:textColor="@color/largeText"
+        android:id="@+id/investorCompanyView"
+        android:layout_marginTop="300dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+
+        android:id="@+id/logoutButton"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="400dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Username"
+        android:id="@+id/inv_profile_userName"
+        android:layout_below="@+id/investorNameView"
+        android:layout_alignLeft="@+id/investorNameView"
+        android:layout_alignStart="@+id/investorNameView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Email Address"
+        android:id="@+id/inv_profile_emailAddress"
+        android:layout_below="@+id/investorEmailView"
+        android:layout_alignLeft="@+id/investorEmailView"
+        android:layout_alignStart="@+id/investorEmailView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Company Name"
+        android:id="@+id/inv_profile_companyName"
+        android:layout_below="@+id/investorCompanyView"
+        android:layout_alignLeft="@+id/investorCompanyView"
+        android:layout_alignStart="@+id/investorCompanyView" />
+
+</RelativeLayout>
+
+

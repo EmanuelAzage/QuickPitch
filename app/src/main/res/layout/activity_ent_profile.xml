@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true">
+
+
+    <LinearLayout
+        style="?android:attr/buttonStyleSmall"
+        android:orientation="horizontal"
+        android:background="@color/tabbedPaneColor"
+        android:paddingLeft="4.0dip"
+        android:paddingTop="0.2dip"
+        android:paddingRight="4.0dip"
+        android:paddingBottom="0.2dip"
+        android:layout_width="fill_parent" android:layout_height="wrap_content"
+        android:id="@+id/linearLayout">
+
+        <Button
+            android:id="@+id/entProfileButton"
+            android:background="@color/tabbedPaneColor"
+            android:textColor="@color/textColor"
+            android:layout_width="5.0dip" android:layout_height="fill_parent"
+            android:text="Profile"
+            android:layout_weight="1.0" />
+
+        <Button
+            android:id="@+id/entConnectionsButton"
+            android:background="@color/tabbedPaneColor"
+            android:textColor="@color/textColor"
+            android:layout_width="5.0dip" android:layout_height="fill_parent"
+            android:text="Connections"
+            android:layout_weight="1.0" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Company Name"
+        android:typeface="normal"
+        android:textSize="25dp"
+        android:id="@+id/editText"
+        android:textColor="#bbbcbc"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="174dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Product Name"
+        android:id="@+id/textView4"
+        android:textSize="27dp"
+        android:layout_below="@+id/editText"
+        android:layout_centerHorizontal="true" />
+
+
+    <com.google.android.youtube.player.YouTubePlayerView
+        android:layout_height="150dp"
+        android:layout_width="200dp"
+        android:id="@+id/youtube_view"
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Product Description"
+        android:id="@+id/textView5"
+        android:maxLines = "4"
+        android:scrollbars = "vertical"
+        android:textSize="17dp"
+        android:layout_below="@+id/youtube_view"
+        android:layout_above="@+id/logoutButton"
+        android:inputType="textMultiLine"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/editText"
+        android:layout_alignStart="@+id/editText" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:id="@+id/logoutButton"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

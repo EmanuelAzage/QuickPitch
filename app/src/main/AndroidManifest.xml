@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.abreezy.quickpitchproject">
+
+    <uses-sdk android:minSdkVersion="8" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <android:uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <android:uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Login.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Login.SignUpActivity" />
+        <activity android:name=".Investor.InvSignUpActivity" />
+        <activity android:name=".Entrepreneur.EntSignUpActivity" />
+        <activity android:name=".Entrepreneur.EntProfileActivity" />
+        <activity android:name=".Entrepreneur.EntConnectionActivity" />
+        <activity android:name=".Investor.InvProfileActivity" />
+        <activity android:name=".Investor.InvFeedActivity" />
+        <activity android:name=".Investor.InvLikesActivity" />
+        <activity android:name=".Investor.InvConnectionsActivity" />
+        <activity android:name=".Investor.InvLikesProfilesActivity" />
+        <activity android:name=".Entrepreneur.EntSecondSignUpActivity" />
+        <activity android:name=".Investor.GuestActivity"/>
+        <activity android:name=".Investor.InvConnectionsProfilesActivity"></activity>
+    </application>
+
+</manifest>

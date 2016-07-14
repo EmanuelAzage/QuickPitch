@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Company Name"
+        android:typeface="normal"
+        android:textSize="25dp"
+        android:id="@+id/invConnections_CompanyName"
+        android:textColor="#bbbcbc"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Product Name"
+        android:id="@+id/invConnections_ProductName"
+        android:textSize="27dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:layout_gravity="center_horizontal" />
+
+    <com.google.android.youtube.player.YouTubePlayerView
+        android:layout_height="200dp"
+        android:layout_width="300dp"
+        android:id="@+id/invConnections_youtube_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="[Product Description]"
+        android:id="@+id/invConnections_productDescription"
+        android:textSize="27dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/youtube_view"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="[Entrepreneur Info]"
+        android:id="@+id/invConnections_entrepreneurInfo"
+        android:textSize="27dp"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="center_horizontal" />
+
+
+</LinearLayout>
